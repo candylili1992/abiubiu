@@ -2,10 +2,12 @@ import React from 'react';
 import { Link } from 'react-router';
 //框架依赖
 import { Layout, Menu,Button, Breadcrumb,Affix } from 'antd';
+import { Input } from 'antd';
 const { Header, Content, Footer } = Layout;
 
 
-import './layout.less'
+import './layout.less';
+const Search = Input.Search;
 
 class HomeLayout extends React.Component {
 
@@ -16,13 +18,17 @@ class HomeLayout extends React.Component {
         <Header className="head">
           <div className="headwrap">
             <div className="logo" >
-              <img  className="logoimg" src={require('../../static/imgs/logo.png')} alt="logo"/>
+              <img  className="logoimg" src={require('../../static/imgs/headerLogo.png')} alt="logo"/>
+            </div>
+            <div className="search">
+              <Search  placeholder="大家都在搜全明星"  style={{ width: 200 }} onSearch={value => console.log(value)}
+  />
             </div>
             <div className="menu">
               <ul>
                   <li className="active"><Link to={'/'}>首页</Link></li>
-                  <li><Link to={'/cate/12'}>分区</Link></li>
-                  <li><Link to={'/products'}>热帖</Link></li>
+                  <li><Link to={'/cate/12'}>视频</Link></li>
+                  <li><Link to={'/products'}>发现</Link></li>
               </ul>
             </div>
             <div className="loginwrap">
