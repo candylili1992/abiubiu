@@ -4,8 +4,8 @@ import PureRenderMixin from 'react-addons-pure-render-mixin';
 // 通用组件
 import BannerSlider from './subpage/BannerSlider';
 import CateList from './subpage/CateList';
-import Recommend from './subpage/Recommend';
-import PrivateZone from './subpage/PrivateZone';
+// import Recommend from './subpage/Recommend';
+import RightZone from './subpage/RightZone';
 
 import './index.less'
 
@@ -22,10 +22,11 @@ class Home extends React.Component {
                 <div className='mainNav'>
                     <div className='clearfix mb20'>
                         <BannerSlider />
-                        <CateList />
+                        <CateList/>
+                        <RightZone/>
+                       
                     </div>
-                    <Recommend />
-                    <PrivateZone />
+                    
                 </div>
             </div>
         )

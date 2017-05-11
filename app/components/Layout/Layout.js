@@ -18,9 +18,9 @@ class HomeLayout extends React.Component {
         <Header className="head">
           <div className="headwrap">
             <div className="logo" >
-              <img  className="logoimg" src={require('../../static/imgs/headerLogo.png')} alt="logo"/>
+              <img  className="logoimg" src={require('../../static/imgs/headerlogo.png')} alt="logo"/>
             </div>
-            <div className="search">
+            <div className="searchwrap" style={styles.search}>
               <Search  placeholder="大家都在搜全明星"  style={{ width: 200 }} onSearch={value => console.log(value)}
   />
             </div>
@@ -48,7 +48,7 @@ class HomeLayout extends React.Component {
               {children}
         </Content>
         <Footer className="footer" style={{ textAlign: 'center' }}>
-          aibiubiu.com ©2017 Created by xifan
+          aibiubiu.com ©2017 Created by candy
         </Footer>
       </Layout>
     );
@@ -56,3 +56,8 @@ class HomeLayout extends React.Component {
 }
 
 export default HomeLayout;
+const styles={
+  search:{
+    float:"left"
+  }
+}

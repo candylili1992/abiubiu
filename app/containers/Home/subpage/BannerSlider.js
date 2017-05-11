@@ -1,8 +1,9 @@
 //core核心依赖
 import React from 'react';
+import { Icon } from 'antd';
 
 //框架依赖
-import { Carousel } from 'antd';
+
 
 
 //css 依赖
@@ -12,28 +13,27 @@ import './subpage.less';
 class BannerSlider extends React.Component{
 	constructor(props) {
 	    super(props);
-	    this.onChange = this.onChange.bind(this);
+	   
 	}
-	onChange(index){
-		console.log(index);
-	}
+	
 	render(){
-		var settings = {
-	      dots: true,
-	      infinite: true,
-	      speed: 500,
-	      slidesToShow: 1,
-	      slidesToScroll: 1,
-	      afterChange:this.onChange,
-	      className:'banner',
-    	};
+		
 		return(
-			<Carousel {...settings}>
-			    <div className="banneritem">1</div>
-			    <div className="banneritem">2</div>
-			    <div className="banneritem">3</div>
-			    <div className="banneritem">5</div>
-			</Carousel>
+			<div>
+				<ul className="navLeft">
+					<li>热门</li>
+					<li>明星</li>
+					<li>搞笑</li>
+					<li>社会</li>
+					<li>视频</li>
+					<li>头部</li>
+					<li>情感</li>
+					<li>时尚</li>
+					<li>军事</li>
+					<li>榜单</li>
+				</ul>
+				<div className="contentRight">11</div>
+			</div>
 		)
 		
 	}
