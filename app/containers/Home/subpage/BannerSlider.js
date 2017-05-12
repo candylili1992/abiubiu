@@ -32,7 +32,7 @@ class BannerSlider extends React.Component{
 					<li>军事</li>
 					<li>榜单</li>
 				</ul>
-				<div className="contentRight">11</div>
+				<div className="contentRight"></div>
 			</div>
 		)
 		
