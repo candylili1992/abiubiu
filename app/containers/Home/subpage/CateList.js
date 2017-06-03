@@ -19,9 +19,14 @@ class CateList extends React.Component{
 		console.log(index);
 	}
 	render(){
-		
+		var list = new Array(9);
+		list.fill(1);
+		console.log("list",list)
 		return(
-			<div className='cateList'>
+           <div className='boxContent clearfix'>
+	           {list.map((item,index)=>{
+	           	 return(
+	           	 	<div className='cateList'>
 				<ul className="pt_ul clearfix">
 					<li className="pt_li">
 						<div className="pic_txt clearfix">
@@ -88,6 +93,10 @@ class CateList extends React.Component{
 					</li>
 				</ul>	
 			</div>
+	           	 	)
+	           })
+			}
+		   </div>
 		)
 		
 	}

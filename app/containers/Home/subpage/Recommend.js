@@ -16,7 +16,7 @@ class Recommend extends React.Component{
 		console.log(index);
 	}
 	render(){
-		var list = new Array(8);
+		var list = new Array(9);
 		list.fill(1);
 		console.log(list)
 
